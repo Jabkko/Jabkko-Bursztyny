@@ -43,8 +43,8 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
 
-        local playerCoords = GetEntityCoords(PlayerPedId()) -- współrzędne gracza
-        local distance = #(playerCoords - targetPoint1) -- obliczenie odległości
+        local playerCoords = GetEntityCoords(PlayerPedId())
+        local distance = #(playerCoords - targetPoint1) 
 
         if distance <= 15.00 then
             ESX.ShowHelpNotification('Naciśnij ~INPUT_CONTEXT~ aby zbierać bursztyny')
@@ -81,8 +81,8 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
 
-        local playerCoords = GetEntityCoords(PlayerPedId()) -- współrzędne gracza
-        local distance = #(playerCoords - targetPoint2) -- obliczenie odległości
+        local playerCoords = GetEntityCoords(PlayerPedId()) 
+        local distance = #(playerCoords - targetPoint2) 
 
         if distance <= 5.0 then
             ESX.ShowHelpNotification('Naciśnij ~INPUT_CONTEXT~ aby sprzedać bursztyny')
