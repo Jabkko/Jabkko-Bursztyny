@@ -5,7 +5,7 @@ RegisterServerEvent('bursztyn:zbierz')
 AddEventHandler('bursztyn:zbierz',function()
     local chance=math.random(1,100)
     local _source = source
-	local xPlayer = ESX.GetPlayerFromId(_source)
+    local xPlayer = ESX.GetPlayerFromId(_source)
     xPlayer.addInventoryItem('bursztyn', math.random(1,3))
     if chance>=90 then 
         xPlayer.addInventoryItem('phone2', 1)
@@ -16,7 +16,7 @@ end)
 RegisterServerEvent('bursztyn:sell')
 AddEventHandler('bursztyn:sell',function()
     local _source = source
-	local xPlayer = ESX.GetPlayerFromId(_source)
+    local xPlayer = ESX.GetPlayerFromId(_source)
     local bursztyn = xPlayer.getInventoryItem('bursztyn').count
     if bursztyn>0 then
         xPlayer.addInventoryItem('money', bursztyn*math.random(20,30))
