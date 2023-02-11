@@ -3,7 +3,6 @@ ESX = exports["es_extended"]:getSharedObject()
 
 RegisterServerEvent('bursztyn:zbierz')
 AddEventHandler('bursztyn:zbierz',function()
-    TriggerEvent('bursztyn:losuj')
     local chance=math.random(1,100)
     local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
