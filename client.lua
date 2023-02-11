@@ -84,7 +84,7 @@ Citizen.CreateThread(function()
         local playerCoords = GetEntityCoords(PlayerPedId()) -- współrzędne gracza
         local distance = #(playerCoords - targetPoint2) -- obliczenie odległości
 
-        if distance <= 15.00 then
+        if distance <= 5.0 then
             ESX.ShowHelpNotification('Naciśnij ~INPUT_CONTEXT~ aby sprzedać bursztyny')
             if IsControlJustReleased(0, Keys['E'])  then
                 TriggerServerEvent('bursztyn:sell')
